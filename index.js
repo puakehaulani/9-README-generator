@@ -1,4 +1,5 @@
 const fs = require("fs");
+const inquirer = require("inquirer");
 
 // array of questions for user
 const promptUser = () =>
@@ -24,19 +25,23 @@ const promptUser = () =>
             message: 'Please write a short description of your project',
         },
         {
+            //make an array, use a badge based on which they choose
             type: 'input',
             name: 'license',
             message: 'What kind of license should your project have?',
+            default: "MIT",
         },
         {
             type: 'input',
             name: 'dependencies',
             message: 'What command should be run to install dependencies?',
+            default: "npm i",
         },
         {
             type: 'input',
             name: 'test',
             message: 'What command should be run to run tests?',
+            default: "npm test",
         },
         {
             type: 'input',
@@ -50,21 +55,12 @@ const promptUser = () =>
         },
     ]).then((answers) => {
         console.log(answers);
-        writeToFile()
+        //insert if statement for checking badge
+        // const markdownString = ``;
+        //fs.writeFile("README.md", markdownString, err => {
+        //         if (err) console.log(err)
+        //     })
     })
-
-// function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile("README.md", htmlString, err => {
-        if (err) console.log(err)
-    })
-
-}
-
-// function to initialize program
-function init() {
-
-}
 
 // function call to initialize program
-init();
+promptUser();
