@@ -71,12 +71,15 @@ const promptUser = () =>
             console.log(answers.license);
         };
         //make title into a string with - instead of spaces to be used in links
+        let linkTitle = answers.title.replace(/\s/g, "-");
+        console.log(linkTitle);
+
         const markdownString = `# ${answers.title}
 
 ![screenshot]()
 
-[See the project](http://${answers.name}.github.io/${answers.title})  
-[Explore the docs](http://github.com/${answers.name}/${answers.title})</div>
+[See the project](http://${answers.name}.github.io/${linkTitle})  
+[Explore the docs](http://github.com/${answers.name}/${linkTitle})</div>
 
 ---
 
