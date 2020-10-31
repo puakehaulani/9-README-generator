@@ -7,13 +7,13 @@
 
 ## Table of Contents
 
-About the Project
-Usage
-Installation
-Contributing
-Testing
-Contact
-License
+[About the Project](#About-the-Project)  
+[Usage](#Usage)  
+[Installation](#Installation)  
+[Contributing](#Contributing)  
+[Testing](#Testing)  
+[Contact](#Contact)  
+[License](#License)
 
 ## About the Project
 
