@@ -25,11 +25,10 @@ const promptUser = () =>
             message: 'Please write a short description of your project',
         },
         {
-            //make an array, use a badge based on which they choose
-            type: 'input',
+            type: 'list',
             name: 'license',
             message: 'What kind of license should your project have?',
-            default: "MIT",
+            choices: ["MIT", "Apache", "GPL", "WTFPL"]
         },
         {
             type: 'input',
@@ -55,7 +54,22 @@ const promptUser = () =>
         },
     ]).then((answers) => {
         console.log(answers);
-        //insert if statement for checking badge
+
+        if (answers.license === "MIT") {
+            var mdlicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+            console.log(answers.license);
+        }
+        else if (answers.license === "Apache") {
+            var mdlicense = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+            console.log(answers.license);
+        }
+        else if (answers.license === "WTFPL") {
+            var mdlicense = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
+            console.log(answers.license);
+        } else {
+            var mdlicense = "GPL";
+            console.log(answers.license);
+        };
         //make title into a string with - instead of spaces to be used in links
         const markdownString = `# ${answers.title}
 
@@ -111,7 +125,7 @@ ${answers.contribute}
 
 ## License
 
-${answers.license}
+${mdlicense}
 
         `;
         fs.writeFile("README.md", markdownString, err => {
