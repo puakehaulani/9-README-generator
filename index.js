@@ -78,6 +78,7 @@ const promptUser = () =>
 
 ![screenshot]()
 
+${mdlicense}  
 [See the project](http://${answers.name}.github.io/${linkTitle})  
 [Explore the docs](http://github.com/${answers.name}/${linkTitle})</div>
 
@@ -91,8 +92,8 @@ const promptUser = () =>
   - [Installation](#Installation)
 - [Contributing](#Contributing)
 - [Testing](#Testing)
-- [Contact](#Contact)
-- [License](#License)  
+- [License](#License) 
+- [Questions](#Questions)   
 
 ## About the Project  
 
@@ -122,13 +123,12 @@ Run the following command in your terminal
 
 ${answers.contribute}
 
-## Contact
-
-<${answers.email}>
-
 ## License
+This application is covered under the ${answers.license} license 
 
-${mdlicense}
+## Questions  
+For any questions, please reach out to <${answers.email}>  
+[Developer repo](http://github.com/${answers.name})
 
         `;
         fs.writeFile("README.md", markdownString, err => {
