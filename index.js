@@ -56,7 +56,9 @@ const promptUser = () =>
     ]).then((answers) => {
         console.log(answers);
         //insert if statement for checking badge
-        // const markdownString = ``;
+        // const markdownString = `
+        //
+        //`;
         //fs.writeFile("README.md", markdownString, err => {
         //         if (err) console.log(err)
         //     })
