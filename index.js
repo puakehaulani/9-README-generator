@@ -53,26 +53,22 @@ const promptUser = () =>
             message: 'What does the user need to know about contributing to the repo?',
         },
     ]).then((answers) => {
-        console.log(answers);
 
-        if (answers.license === "MIT") {
-            var mdlicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-            console.log(answers.license);
-        }
-        else if (answers.license === "Apache") {
-            var mdlicense = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-            console.log(answers.license);
-        }
-        else if (answers.license === "WTFPL") {
-            var mdlicense = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
-            console.log(answers.license);
-        } else {
-            var mdlicense = "GPL";
-            console.log(answers.license);
+        switch (answers.license) {
+            case "MIT":
+                var mdlicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+                break;
+            case "Apache":
+                var mdlicense = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+                break;
+            case "WTFPL":
+                var mdlicense = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
+                break;
+            default:
+                break;
         };
-        //make title into a string with - instead of spaces to be used in links
+
         let linkTitle = answers.title.replace(/\s/g, "-");
-        console.log(linkTitle);
 
         const markdownString = `# ${answers.title}
 
