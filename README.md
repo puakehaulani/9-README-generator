@@ -1,6 +1,6 @@
 # README Generator
 
-![Use Gif](assets/images/Demo.mp4)
+![Use Gif](assets/images/Demo.gif)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 [See the project](http://puakehaulani.github.io/README-Generator)  
