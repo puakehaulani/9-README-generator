@@ -77,7 +77,7 @@ const promptUser = () =>
 
 ${mdlicense}  
 [See the project](http://${answers.name}.github.io/${linkTitle})  
-[Explore the docs](http://github.com/${answers.name}/${linkTitle})</div>
+[Explore the docs](http://github.com/${answers.name}/${linkTitle})
 
 ---
 
