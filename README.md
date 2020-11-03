@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[Explore the docs](http://github.com/puakehaulani/README-Generator)</div>
+[Explore the docs](http://github.com/puakehaulani/README-Generator)
 
 ---
 
