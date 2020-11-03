@@ -87,8 +87,8 @@ ${mdlicense}
 - [Usage](#Usage)
 - [Getting Started](#Getting-Started)
   - [Installation](#Installation)
-- [Contributing](#Contributing)
 - [Testing](#Testing)
+- [Contributing](#Contributing)
 - [License](#License) 
 - [Questions](#Questions)   
 

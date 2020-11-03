@@ -2,8 +2,8 @@
 
 ![Demo](assets/images/Demo.gif)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-[See the project](http://puakehaulani.github.io/README-Generator)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 [Explore the docs](http://github.com/puakehaulani/README-Generator)</div>
 
 ---
@@ -14,8 +14,8 @@
 - [Usage](#Usage)
 - [Getting Started](#Getting-Started)
   - [Installation](#Installation)
-- [Contributing](#Contributing)
 - [Testing](#Testing)
+- [Contributing](#Contributing)
 - [License](#License)
 - [Questions](#Questions)
 
